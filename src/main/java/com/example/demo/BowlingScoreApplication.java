@@ -18,8 +18,14 @@ public class BowlingScoreApplication {
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
 
-            System.out.println("Let's inspect the beans provided by Spring Boot:");
+            System.out.println("Welcome to Bowling");
 
+            Game game = new Game();
+
+            System.out.println("Rolling..");
+            game.roll(10);
+
+            System.out.println("Your score is: " + game.score());
 
 
 
