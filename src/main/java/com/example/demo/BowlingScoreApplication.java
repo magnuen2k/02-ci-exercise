@@ -22,7 +22,7 @@ public class BowlingScoreApplication {
 
             Game game = new Game();
 
-            System.out.println("Rolling..");
+            System.out.println("Rolling...");
             game.roll(10);
 
             System.out.println("Your score is: " + game.score());
